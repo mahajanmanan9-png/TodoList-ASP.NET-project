@@ -1,0 +1,48 @@
+@model List<TodoList.Models.Todo>
+
+<link rel="stylesheet" href="~/css/style.css" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My To-Do List</title>
+    <style>
+        body { font-family: Arial; max-width: 650px; margin: 50px auto; padding: 20px; }
+        h1 { text-align: center; }
+        form { display: flex; gap: 10px; margin-bottom: 25px; }
+        input { flex: 1; padding: 10px; }
+        button, a { padding: 9px 12px; text-decoration: none; }
+        .task { border: 1px solid #ddd; padding: 12px; margin: 8px 0; display: flex; justify-content: space-between; }
+        .done { text-decoration: line-through; }
+        .actions a { margin-left: 5px; }
+    </style>
+</head>
+<body>
+    <h1>My To-Do List</h1>
+
+    <form method="post" action="/Todo/Add">
+        <input name="task" placeholder="Enter a task..." required />
+        <button type="submit">Add</button>
+    </form>
+
+    @foreach (var todo in Model)
+    {
+        <div class="task">
+            <span class="@(todo.IsCompleted ? "done" : "")">@todo.Task</span>
+            <span class="actions">
+                @if (!todo.IsCompleted)
+                {
+                    <a href="/Todo/Complete/@todo.Id">Complete</a>
+                }
+                <a href="/Todo/Delete/@todo.Id">Delete</a>
+            </span>
+        </div>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <p style="text-align:center;">No tasks yet. Add your first task!</p>
+    }
+</body>
+</html>

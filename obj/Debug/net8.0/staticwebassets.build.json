@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "JY0pmwT39xPfrPCkWsxFIRa/8K3qqChMigjSRyGofgc=",
+  "Source": "TodoList",
+  "BasePath": "_content/TodoList",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoList\\wwwroot",
+      "Source": "TodoList",
+      "ContentRoot": "C:\\Users\\DELL\\Downloads\\TodoList_ASP.NET_Project\\wwwroot\\",
+      "BasePath": "_content/TodoList",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\DELL\\Downloads\\TodoList_ASP.NET_Project\\wwwroot\\css\\style.css",
+      "SourceId": "TodoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\Downloads\\TodoList_ASP.NET_Project\\wwwroot\\",
+      "BasePath": "_content/TodoList",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
