@@ -24,3 +24,4 @@ C:\Users\DELL\Downloads\TodoList_ASP.NET_Project\obj\Debug\net8.0\TodoList.pdb
 C:\Users\DELL\Downloads\TodoList_ASP.NET_Project\obj\Debug\net8.0\TodoList.genruntimeconfig.cache
 C:\Users\DELL\Downloads\TodoList_ASP.NET_Project\obj\Debug\net8.0\ref\TodoList.dll
 C:\Users\DELL\Downloads\TodoList_ASP.NET_Project\bin\Debug\net8.0\TodoList.staticwebassets.runtime.json
+C:\Users\DELL\Downloads\TodoList_ASP.NET_Project\obj\Debug\net8.0\TodoList.sourcelink.json
